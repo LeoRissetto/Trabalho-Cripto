@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Certificados NFT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro de Certificados Acadêmicos em NFT</h1>
+      <p>Projeto final da disciplina de Criptomoedas e Blockchain.</p>
+
+      <div class="wallet-info">
+        <button id="connectButton">Conectar MetaMask</button>
+        <button id="disconnectButton" class="hidden">Desconectar</button>
+        <p id="walletAddress"></p>
+        <p id="networkInfo"></p>
+      </div>
+
+      <!-- Seção do Administrador para emitir certificados -->
+      <div id="adminSection" class="hidden">
+        <h2>Painel do Administrador</h2>
+        <div class="form-container">
+          <h3>Emitir Novo Certificado</h3>
+          <input
+            type="text"
+            id="studentAddress"
+            placeholder="Endereço do Aluno (0x...)"
+          />
+          <input type="text" id="studentName" placeholder="Nome do Aluno" />
+          <input type="text" id="courseName" placeholder="Nome do Curso" />
+          <input
+            type="number"
+            id="completionYear"
+            placeholder="Ano de Conclusão"
+          />
+          <button id="mintButton">Emitir Certificado</button>
+          <p id="mintStatus"></p>
+        </div>
+      </div>
+
+      <!-- Seção para consultar certificados -->
+      <div id="lookupSection" class="hidden">
+        <h2>Consultar Certificado</h2>
+        <div class="form-container">
+          <input
+            type="number"
+            id="tokenIdInput"
+            placeholder="ID do Certificado (Token ID)"
+          />
+          <button id="lookupButton">Consultar</button>
+          <div id="certificateInfo"></div>
+        </div>
+      </div>
+
+      <!-- Seção Meus Certificados removida -->
+    </div>
+
+    <!-- Incluindo a biblioteca Ethers.js a partir de um CDN confiável -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <!-- Nosso script principal -->
+    <script src="app.js"></script>
+  </body>
+</html>

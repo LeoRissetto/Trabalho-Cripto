@@ -1,0 +1,128 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #457b9d;
+  margin-top: 0;
+}
+
+.wallet-info {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+#walletAddress,
+#networkInfo {
+  font-size: 0.9em;
+  color: #666;
+  word-wrap: break-word;
+}
+
+button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
+
+button:disabled {
+  background-color: #a8dadc;
+  cursor: not-allowed;
+}
+
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+h2 {
+  color: #1d3557;
+  border-bottom: 2px solid #a8dadc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.hidden {
+  display: none;
+}
+
+#certificateInfo,
+.certificate-card {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  border-left: 5px solid #457b9d;
+}
+
+#userCertificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.certificate-card p {
+  text-align: left;
+  margin: 5px 0;
+  color: #333;
+}
+
+.certificate-card strong {
+  color: #1d3557;
+}
+
+#mintStatus {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#disconnectButton {
+  background-color: #e63946; /* Cor vermelha para "desconectar" */
+  margin-left: 10px;
+}
