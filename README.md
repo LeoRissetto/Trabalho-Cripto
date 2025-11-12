@@ -82,7 +82,7 @@ Siga os passos abaixo para executar a aplicação localmente.
 
 1.  Abra um terminal ou prompt de comando.
 2.  Navegue até a pasta `frontend` do projeto.
-3.  Execute o comando: `python -m http.server`.
+3.  Execute o comando: `python3 -m http.server`.
 4.  Abra seu navegador e acesse o endereço: `http://localhost:8000`.
 
 ## 7. Como Usar a Aplicação
